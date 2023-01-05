@@ -1,0 +1,79 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Lato", "Verdana", sans-serif;
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    color: #102746;
+}
+
+.wrapper {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+/* header styles start */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 56px;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navigation__item {
+    padding-right: 82px;
+}
+
+.navigation__item:last-child {
+    padding-right: 0px;
+}
+
+.navigation__link {
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navigation__link:hover,
+.navigation__link:focus,
+.navigation__link:active {
+    opacity: .75;
+}
+
+/* header styles end */
+
+/* intro styles start */
+
+.intro {
+    height: 100vh;
+    background: url("../assets/img/intro.jpg") no-repeat center;
+    background-size: cover;
+}
+
+/* intro styles end */

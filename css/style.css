@@ -50,6 +50,27 @@ h3 {
     margin: 0 auto;
 }
 
+.wrapper-large {
+    max-width: 1262px;
+    margin: 0 auto;
+}
+
+.title-underline {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.title-underline::after {
+    display: block;
+    content: '';
+    width: 253px;
+    height: 3px;
+    background-color: #006DFE;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 .button {
     text-transform: uppercase;
     background: #1B7DFF;
@@ -73,7 +94,8 @@ h3 {
     transition: .4s all;
 }
 
-.arrow-link:hover, .arrow-link:focus {
+.arrow-link:hover,
+.arrow-link:focus {
     background: url('../assets/svg/arrow.svg') no-repeat right center;
 }
 
@@ -129,6 +151,7 @@ h3 {
     background: url("../assets/img/intro.jpg") no-repeat center;
     background-size: cover;
     padding-top: 252px;
+    padding-bottom: 223px;
 }
 
 .intro-text {
@@ -222,3 +245,101 @@ h3 {
 }
 
 /* benefits styles end */
+
+/* places styles start */
+
+.places {
+    padding-bottom: 131px;
+}
+
+.places__caption {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+.places__title {
+    margin-right: 15px;
+}
+
+.places__arrow {
+    background: url('../assets/svg/arrow.svg') no-repeat right center;
+}
+
+.places__arrow:hover,
+.places__arrow:focus {
+    opacity: .60;
+}
+
+.places__cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+.places__card {
+    position: relative;
+    overflow: hidden;
+}
+
+.places__card-large {
+    grid-column: span 3;
+}
+
+.places__card-small {
+    grid-column: span 2;
+}
+
+.places__card-pic_large {
+    height: 35.4rem;
+}
+
+.places__card-pic_small {
+    height: 28.3rem;
+}
+
+.places__card-pic {
+    width: 100%;
+    object-fit: cover;
+    transition: .15s all;
+}
+
+.places__card::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 24, 36, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.places__card:hover .places__card-pic {
+    transform: scale(1.05);
+}
+
+.places__card-title {
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 6rem;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 27px;
+    left: 29px;
+    z-index: 3;
+}
+
+.places__card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+/* places styles end */

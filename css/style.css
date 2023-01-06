@@ -391,6 +391,11 @@ h3 {
     grid-gap: 57px;
 }
 
+.top__card {
+    display: flex;
+    flex-direction: column;
+}
+
 .top__card-pic {
     position: relative;
     margin-bottom: 45px;
@@ -430,10 +435,12 @@ h3 {
 }
 
 .top__button {
+    max-width: 12.3rem;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.9rem;
     padding: 12px 19px;
+    margin: auto 0 0 0;
 }
 
 /* top styles end */

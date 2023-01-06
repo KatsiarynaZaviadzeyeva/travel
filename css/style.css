@@ -359,7 +359,7 @@ h3 {
 }
 
 .tour__info {
-   padding-left: 47px;
+    padding-left: 47px;
 }
 
 .tour__title {
@@ -374,3 +374,66 @@ h3 {
 }
 
 /* tours styles end */
+
+/* top styles start */
+
+.top {
+    padding-bottom: 86px;
+}
+
+.top__tittle {
+    margin-bottom: 54px;
+}
+
+.top__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 57px;
+}
+
+.top__card-pic {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.top__card-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(21, 24, 36, 0.6);
+    padding: 16px 25px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.top__card-title {
+    margin-right: 143px;
+}
+
+.top__card-likes {
+    padding-right: 20px;
+    background: url(../assets/svg/heart.svg) no-repeat right center;
+}
+
+.top__card-comments {
+    padding-right: 23px;
+    background: url(../assets/svg/comment.svg) no-repeat right center;
+}
+
+.top__card-text {
+    padding-bottom: 31px;
+}
+
+.top__button {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    padding: 12px 19px;
+}
+
+/* top styles end */

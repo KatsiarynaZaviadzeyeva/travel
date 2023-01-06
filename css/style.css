@@ -19,9 +19,29 @@ body {
     color: #102746;
 }
 
+h1 {
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 6rem;
+    color: #FFFFFF;
+    max-width: 61.9rem;
+    padding-bottom: 22px;
+}
+
 .wrapper {
     max-width: 1060px;
     margin: 0 auto;
+}
+
+.button {
+    text-transform: uppercase;
+    background: #1B7DFF;
+    color:#FFFFFF;
+    border: 0;
+}
+
+.button:hover, .button:focus, .button:active {
+    background-color: #3269b4;
 }
 
 /* header styles start */
@@ -56,7 +76,7 @@ body {
 
 .navigation__link {
     font-size: 1.8rem;
-    color: #ffffff;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -71,9 +91,48 @@ body {
 /* intro styles start */
 
 .intro {
-    height: 100vh;
+    min-height: 100vh;
     background: url("../assets/img/intro.jpg") no-repeat center;
     background-size: cover;
+    padding-top: 252px;
+}
+
+.intro-text {
+    color: #FFFFFF;
+    max-width: 54.6rem;
+    padding-bottom: 59px;
+}
+
+.search-form__info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-form__field {
+    width: 29.7rem;
+    background: transparent url('../assets/svg/ring.svg') no-repeat left 8px;
+    background-size: 20px;
+    border: 0;
+    border-bottom: 2px solid #BFC0C5;
+    margin-right: 60px;
+    padding-left: 43px;
+    padding-bottom: 22px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.search-form__field::placeholder {
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.search-form__button {
+    padding: 15px 39px;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
 }
 
 /* intro styles end */

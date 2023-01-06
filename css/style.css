@@ -343,3 +343,34 @@ h3 {
 }
 
 /* places styles end */
+
+/* tours styles start */
+
+.tours {
+    padding-bottom: 139px;
+}
+
+.tours__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 108px;
+    align-items: center;
+    padding-bottom: 77px;
+}
+
+.tour__info {
+   padding-left: 47px;
+}
+
+.tour__title {
+    font-weight: 500;
+    font-size: 3.0rem;
+    line-height: 4.0rem;
+    padding-bottom: 85px;
+}
+
+.tour__text {
+    padding-bottom: 58px;
+}
+
+/* tours styles end */

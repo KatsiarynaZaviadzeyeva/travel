@@ -103,11 +103,17 @@ h3 {
 /* header styles start */
 
 .header {
-    position: absolute;
+    padding: 45px 0 20px 0;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 56px;
+    transition: .5s linear;
+    z-index: 10;
+}
+
+.header_active {
+    background: #0E1D28;
 }
 
 .header__wrapper {

@@ -48,11 +48,13 @@ h3 {
 .wrapper {
     max-width: 1060px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .wrapper-large {
     max-width: 1262px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .title-underline {
@@ -146,6 +148,35 @@ h3 {
 .navigation__link:focus,
 .navigation__link:active {
     opacity: .75;
+}
+
+.header__burger {
+    display: none;
+    width: 4rem;
+    height: 2.8rem;
+    position: relative;
+}
+
+.burger__line {
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 0;
+}
+
+.burger__line_first {
+    top: 0;
+}
+
+.burger__line_second {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger__line_third {
+    bottom: 0;
 }
 
 /* header styles end */
@@ -512,8 +543,78 @@ h3 {
     text-decoration: none;
 }
 
-.footer__navigation__link:hover, .footer__navigation__link:focus, .footer__navigation__link:active {
+.footer__navigation__link:hover,
+.footer__navigation__link:focus,
+.footer__navigation__link:active {
     opacity: 0.75;
 }
 
 /* footer styles end */
+
+/* media start */
+
+@media screen and (max-width: 767px) {
+    .header__burger {
+        display: block;
+    }
+
+    .header__navigation {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(21, 24, 36);
+        z-index: 6;
+        padding: 75px;
+        transform: translateX(100%);
+    }
+
+    .header__navigation_active {
+        transform: translateX(0);
+        transition: 0.5 all linear;
+    }
+
+    .navigation__item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .navigation__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .navigation__link {
+        font-size: 4.2rem;
+        line-height: 4.8rem;
+    }
+
+    .header__navigation-close {
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 7;
+    }
+
+    .header__navigation-close-line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 50%;
+    }
+
+    .header__navigation-close-line:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header__navigation-close-line:last-child {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+}
+
+/* media end */

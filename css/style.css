@@ -450,3 +450,70 @@ h3 {
 }
 
 /* top styles end */
+
+/* video styles start */
+
+.video {
+    width: 100%;
+}
+
+.video__wrapper {
+    max-width: 144rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* при формате видео 16х9 (9 / 16 * 100%) */
+.video__item {
+    padding-top: 56.25%;
+}
+
+.video__element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* video styles end */
+
+/* footer styles start */
+
+.footer {
+    background: #0E1D28;
+    padding: 119px 0;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__logo {
+    flex-basis: 50%;
+}
+
+.footer__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+
+.footer__navigation-title {
+    color: #FFFFFF;
+}
+
+.footer__navigation__link {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer__navigation__link:hover, .footer__navigation__link:focus, .footer__navigation__link:active {
+    opacity: 0.75;
+}
+
+/* footer styles end */

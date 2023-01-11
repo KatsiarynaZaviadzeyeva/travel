@@ -12,15 +12,25 @@
 // Burger handler 
 
 (function () {
+    console.log('click');
     const burgerItem = document.querySelector('.burger');
     const menu = document.querySelector('.header__navigation');
     const menuCloseItem = document.querySelector('.header__navigation-close');
+    const menuLinks = document.querySelectorAll('.navigation__link');
     burgerItem.addEventListener('click', () => {
         menu.classList.add('header__navigation--active');
     });
     menuCloseItem.addEventListener('click', () => {
         menu.classList.remove('header__navigation--active');
     });
+    if (window.innerWidth <= 767) {
+        for (let i = 0; i < menuLinks.length; i++) {
+            menuLinks[i].addEventListener('click', () => {
+                menu.classList.remove('header__navigation--active');
+            });
+        }
+    }
+
 }());
 
 // Scroll to anchors
